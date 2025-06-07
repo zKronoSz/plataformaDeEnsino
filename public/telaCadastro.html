@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Login</title>
+</head>
+<body style="background-color: #FFFFFF;">
+        
+      <header class="w-full" class="flex items-center text-center justify-between px-4 py-2 bg-white shadow ">
+            <nav class="flex items-center justify-between px-2 py-1 h-20 bg-white shadow-xl/15 shadow-cyan-500/50 w-full">
+
+          <!-- Kaiqui, aqui é a logo -->      
+         <a href="./form.html" class=" flex items-center gap-1">
+            <img src="../assets/cavaloRo.svg" alt="logo" class="items-center w-18 h-20 object-contain" />
+            <span class="text-xl italic font-bold ">𝓢𝓴𝓲𝓵𝓵𝓑𝓻𝓲𝓭𝓰𝓮</span>
+         </a>
+
+         <!--barra de pesquisa aqui-->
+               <div class="mr-2 relative w-110 h-7 "> 
+                <img class="absolute left-3 top-4 transform -translate-y-1/2 w-5 h-5 pointer-events-none" src="../assets/lupa-arredondada.svg" alt="lupa"> 
+                <input class="w-full pl-10 pr-1 py-1 border border-gray-300 rounded-full focus:outline-none focus:ring-2 focus:ring-[#b3b3d8] hover:bg-[#fff6ff] transition-colors duration-200" type="text" name="pesquisar" placeholder="Pesquisar por qualquer coisa">
+               </div> 
+
+            </form>    
+         <ul class="text-[13px] flex h-10 items-center space-x-5">
+            <li><a href="#" class="rounded-md p-2 hover:bg-[#fff6ff] transition-colors duration-200">Contato</a></li>
+            <li><a href="#" class="rounded-md p-2 hover:bg-[#fff6ff] transition-colors duration-200">Seja um patrocinador</a></li>
+            <li><a href="#"><img class="w-5" src="../assets/vista-lateral-vazia-do-carrinho-de-compras.svg" alt="Carrinho"></a></li>
+            <li><a href="./form.html" class="bg-cyan-500 shadow-lg shadow-cyan-500/50 rounded-md p-2">Fazer login</a></li>
+            <li><a href="./telaCadastro.html" class="bg-cyan-500 shadow-lg shadow-cyan-500/50 rounded-md p-2">Cadastre-se</a></li>
+        </ul>
+        </nav>
+      </header>
+
+      <main>
+        <section>
+                <div class="absolute left-0 top-1/2 transform -translate-y-1/2 pointer-events-none">
+                    <img src="../assets/cavaloRo.svg" alt="Cavalo" class="w-110 h-110 object-contain opacity-70" />
+                </div>  
+        </section>
+      </main>
+
+       <div class="mb-30 flex items-center text-center justify-end h-screen pr-20">
+        <form class="box-content size-100 flex flex-col items-start" action="index.php" method="post">
+            <h1 class="font-bold pb-10 text-[30px]">Crie uma conta para continuar sua jornada de aprendizado</h1>
+            <input type="hidden" name="acao" value="cadastrar">
+            <input class="border border-gray-300 p-6 rounded w-100 h-10 mb-2" type="text" name="nome" placeholder="Nome" required>
+            <input class="border border-gray-300 p-6 rounded w-100 h-10 mb-2" type="email" name="email" placeholder="E-mail" required>
+            <input class="border border-gray-300 p-6 rounded w-100 h-10 mb-4" type="password" name="senha" placeholder="Senha" required>
+            <input type="hidden" name="acao" value="cadastrar">
+            <button type="submit" class="text-center bg-cyan-500 rounded-md p-2 w-100 h-10 text-[20px] text-white">Cadastrar conta</button>
+        </form>
+    </div>
+
+    
+</body>
+</html>
